@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videogames</title>
+</head>
+
+<link href="estilos.css" rel="stylesheet"/>
+<body>
+    
+    <h1 id="title">Videogames</h1>
+    <p id="description"> Survey form about our passion </p>
+    <form id="survey-form">
+      <label id="name-label" for="name"><h2>Name:</h2></label>
+      <input type="text"
+             required 
+             id="name" 
+             placeholder="Insert Name" 
+             label id="name-label"></input>
+      <label id="email-label" for="email"><h2>Email:</h2></label>
+      <input type="email" 
+             required 
+             id="email" 
+             placeholder="Insert Email" 
+             label id="email-label"></input>
+      <label id="number-label" for="number"><h2>Age:</h2></label>
+      <input type="number" 
+             required 
+             id="number" 
+             placeholder="Insert Age" 
+             min="0" 
+             max="99"></input>
+  
+  
+   <label for="dropdown"><h2>How much time do you spend playing videogames per day?:</h2></label>
+    <select name="dropdown" id="dropdown">
+      <option value="0-1 Hour">0-1 Hour</option>
+      <option value="1-2 Hours">1-2 Hours</option>
+      <option value="2-4 Hours">2-4 Hours</option>
+      <option value="+4 Hours">+4 Hours</option>
+    </select>
+  
+  <br><br><br><br>
+  <h2>What is your favourite platform?:</h2>
+  
+  <label>
+    <input type="radio" name="platform" value="nintendo">
+    <img src="imagenes/nintendo.png">
+  </label>
+  
+  <label>
+    <input type="radio" name="platform" value="xbox">
+    <img src="imagenes/xbox.png">
+  </label>
+  
+  <label>
+    <input type="radio" name="platform" value="pc">
+    <img src="imagenes/pc.png">
+  </label>
+  
+  <label>
+    <input type="radio" name="platform" value="playstation">
+    <img src="imagenes/play.png">
+  </label>
+  
+  <br><br>
+  
+  <h2>What are your favourite genre?:</h2>
+  
+  <div class="grid-container">
+    
+    <div class="grid-item">
+      
+        <label>
+        <input type="checkbox" name="sandbox" value="sandbox">
+          <div class="container">
+            <img src="imagenes/sandbox.jpg">
+          <div class="overlay">
+            <div class="text"><h3>Sandbox</h3></div>   
+            </div>
+          </div>
+        </div>
+      </label>
+    
+    
+    <div class="grid-item">
+      
+        <label>
+        <input type="checkbox" name="rts" value="rts">
+          <div class="container">
+            <img src="imagenes/rts.jpg">
+          <div class="overlay">
+            <div class="text"><h3>Real-time strategy (RTS)</h3></div>   
+            </div>
+          </div>
+        </div>
+      </label>
+    
+    
+      <div class="grid-item">
+      
+        <label>
+        <input type="checkbox" name="fps" value="fps">
+          <div class="container">
+            <img src="imagenes/fps.jpg">
+          <div class="overlay">
+            <div class="text"><h3>Shooters (FPS and TPS)</h3></div> 
+            </div>
+          </div>
+        </div>
+      </label>
+    
+    
+    <div class="grid-item">
+      
+        <label>
+        <input type="checkbox" name="moba" value="moba">
+          <div class="container">
+            <img src="imagenes/moba.jpg">
+          <div class="overlay">
+            <div class="text"><h3>Multiplayer online battle arena (MOBA)</h3></div> 
+            </div>
+          </div>
+        </div>
+      </label>
+    
+    
+    <div class="grid-item">
+      
+        <label>
+        <input type="checkbox" name="rpg" value="rpg">
+          <div class="container">
+            <img src="imagenes/rpg.png">
+          <div class="overlay">
+            <div class="text"><h3>Role-playing (RPG, ARPG, and More)</h3></div> 
+            </div>
+          </div>
+        </div>
+      </label> 
+    
+    
+      <div class="grid-item">
+      
+        <label>
+        <input type="checkbox" name="sports" value="sports">
+          <div class="container">
+            <img src="imagenes/sports.jpg">
+          <div class="overlay">
+            <div class="text"><h3>Simulation and sports</h3></div> 
+            </div>
+          </div>
+        </div>
+      </label>  
+    
+    
+    <div class="grid-item">
+      
+        <label>
+        <input type="checkbox" name="puzzles" value="puzzles">
+          <div class="container">
+            <img src="imagenes/puzzles.jpg">
+          <div class="overlay">
+            <div class="text"><h3>Puzzles and party games</h3></div> 
+            </div>
+          </div>
+        </div>
+      </label>  
+    
+    
+   <div class="grid-item">
+      
+        <label>
+        <input type="checkbox" name="action" value="action">
+          <div class="container">
+            <img src="imagenes/action.jpg">
+          <div class="overlay">
+            <div class="text"><h3>Action-adventure</h3></div> 
+            </div>
+          </div>
+        </div>
+      </label>    
+  
+  
+    <div class="grid-item">
+      
+        <label>
+        <input type="checkbox" name="horror" value="horror">
+          <div class="container">
+            <img src="imagenes/horror.jpg">
+          <div class="overlay">
+            <div class="text"><h3>Survival and horror</h3></div> 
+            </div>
+          </div>
+        </div>
+      </label>    
+    
+    
+    
+      <div class="grid-item">
+      
+        <label>
+        <input type="checkbox" name="platformer" value="platformer">
+          <div class="container">
+            <img src="imagenes/platform.jpg">
+          <div class="overlay">
+            <div class="text"><h3>Platformer</h3></div> 
+            </div>
+          </div>
+        </div>
+      </label>
+   </div> 
+    
+    <h3>Please insert here any comments or suggestions</h3>
+    
+    <br>
+    
+    <textarea>
+      
+      </textarea>
+  
+  
+  
+  
+   <input type="submit" value="Send all" id="submit">
+    
+  
+    
+  
+    </form>
+  </body>
+  </html>
+
+</body>
+</html>

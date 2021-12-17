@@ -1,0 +1,247 @@
+body{
+    background-image: url( imagenes/wallpaper.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-color:black;
+    background-position: center;
+    background-attachment: fixed;
+  
+  }
+  
+  h1{
+    text-align:center;
+    color:white;
+    font-size:40px;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+  
+  h2{
+    text-align:center;
+    color:white;
+    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
+  }
+  
+  h3{
+    color:white;
+    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
+    text-align:center;
+  }
+  
+  p{
+    text-align:center;
+    color:white;
+    font-size:25px;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+  
+  img{
+    width:30%;
+    margin:3%;
+    
+  }
+  
+  img:hover{
+    width:40%;
+    
+  }
+  
+  form{
+    display:block;
+    background-color:black;
+    opacity:0.9;
+    text-align:center;
+    width:50%;
+    margin:auto;
+    padding:10px;
+    border-style:outset;
+    
+  }
+  
+  
+  
+  input[type=text]{
+    width:60%;
+    font-size:20px;
+    text-align:center;
+    padding:5px;
+    background-color:white
+    
+    } 
+  
+  input[type=email]{
+    width:60%;
+    font-size:20px;
+    text-align:center;
+    padding:5px;
+    background-color:white
+    
+    } 
+  
+  input[type=number]{
+    width:60%;
+    font-size:20px;
+    text-align:center;
+    padding:5px;
+    background-color:white
+    
+    } 
+  
+  [type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  select{
+    width:60%;
+    font-size:20px;
+    text-align:center;
+    padding:5px;
+    background-color:white
+    
+    } 
+  
+  [type=radio] + img {
+    cursor: pointer;
+  }
+  
+  [type=radio]:checked + img {
+    outline: 10px outset darkred;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns:  auto auto;
+    justify-content: center;
+    align-content: center;
+    
+    
+    } 
+  
+  
+  .grid-container img {
+    width:90%;
+    margin-bottom:10%;
+    border-radius: 8px;
+    } 
+  
+  
+  .grid-item img:hover {
+    width:90%;
+    } 
+  
+  
+  
+  
+  .container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .container:hover{
+    width: 100%;
+  }
+  
+  
+  
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.8;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  
+  textarea{
+    margin:auto;
+    width:70%;
+    height:150px;
+    text-align:left;
+    color:white;
+    font-size:20px;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px;
+    border-style:outset;
+    background-image: url( imagenes/pacman.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color:black;
+    background-position: bottom;
+    }
+  
+  [type=submit]{
+    width:80%;
+    height:50px;
+    font-size:20px;
+    color:white;
+    background-color:black;
+    margin: 60px 0px;
+  }
+  
+  [type=submit]:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  
+  
+  @media screen and (max-width: 1000px) {
+    form{
+    width:90%;
+    }
+    
+    h3{
+    font-size:8px;
+    
+  }
+    
+   input[type=text]{
+    width:90%;
+    font-size:10px;
+    
+    } 
+  
+  input[type=email]{
+    width:90%;
+    font-size:10px;
+    
+    } 
+  
+  input[type=number]{
+    width:90%;
+    font-size:10px;
+    
+    } 
+  
+  
+  select{
+    width:90%;
+    font-size:10px;
+    
+    }  
+    
+  textarea{
+    width:90%;
+    font-size:10px;
+    }
+  }
